@@ -7,5 +7,3 @@ Flognest is your ultimate offline companion for tracking all your favorite movie
 - **Offline Mode**: Track and manage your entertainment without needing an internet connection.
 - **Watchlist Management**: Effortlessly add and remove movies and series to your personal watchlist.
 - **Powerful Filters**: Filter your library by title, genre, type, status, and favorites to easily find what you're looking for.
-- **Sleek Design**: Built with Jetpack Compose for a modern, fluid, and responsive user interface.
-- **Customizable**: Curate your watchlist and track your progress as you go.
