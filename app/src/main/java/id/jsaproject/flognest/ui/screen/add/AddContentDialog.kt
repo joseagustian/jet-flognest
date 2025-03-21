@@ -154,7 +154,7 @@ fun AddContentDialog(
                     Spacer(modifier.weight(1f))
                     Icon(
                         imageVector = Icons.Default.Close,
-                        contentDescription = "Close",
+                        contentDescription = "Close Dialog",
                         modifier = modifier
                             .align(Alignment.CenterVertically)
                             .padding(end = 8.dp)
