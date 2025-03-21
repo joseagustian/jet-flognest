@@ -265,7 +265,12 @@ fun ContentListCard(
                                 )
                         )
                         Text(
-                            text = if (isWatched) "$personalRating/10" else "Not Rated",
+                            text = if (isWatched) {
+                                if (personalRating % 1.0 == 0.0)
+                                    "${personalRating.toInt()}/10"
+                                else
+                                    "$personalRating/10"
+                            } else "Not Rated",
                             style = MaterialTheme.typography.bodyMedium.copy(
                                 fontWeight = FontWeight.Bold
                             ),

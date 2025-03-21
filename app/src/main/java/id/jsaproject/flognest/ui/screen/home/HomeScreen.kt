@@ -105,6 +105,12 @@ fun HomeScreen(
         }
     }
 
+    LaunchedEffect(shouldRefreshData) {
+        if (shouldRefreshData) {
+            contentViewModel.getContentList()
+        }
+    }
+
     HomeContent(
         uiState = uiState,
         modifier = modifier,
@@ -139,12 +145,6 @@ fun HomeScreen(
         },
         filterState = filterState
     )
-
-    if (shouldRefreshData) {
-        LaunchedEffect(Unit) {
-            contentViewModel.refreshContentList()
-        }
-    }
 }
 
 @Composable

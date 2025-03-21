@@ -51,6 +51,19 @@ fun Flognest(
     var contentState by remember { mutableStateOf(ContentState()) }
     var contentTitle by remember { mutableStateOf("") }
 
+    LaunchedEffect(contentState.shouldRefreshData) {
+        if (contentState.shouldRefreshData) {
+            contentState = contentState.copy(shouldRefreshData = false)
+        }
+    }
+
+    LaunchedEffect(contentState.shouldRefreshDetail) {
+        if (contentState.shouldRefreshDetail) {
+            contentState = contentState.copy(shouldRefreshDetail = false)
+        }
+    }
+
+
     Scaffold(
         modifier = modifier
             .background(Color.White),

@@ -165,7 +165,10 @@ fun RatingWidget(
                     )
                 )
                 Text(
-                    "$personalRating",
+                    if (personalRating % 1.0 == 0.0)
+                        "${personalRating.toInt()}/10"
+                    else
+                        "$personalRating/10",
                     color = Color(0xFF000000),
                     style = TextStyle(
                         fontWeight = FontWeight.SemiBold

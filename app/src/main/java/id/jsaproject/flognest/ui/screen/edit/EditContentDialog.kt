@@ -165,7 +165,7 @@ fun EditContentDialog(
                         },
                         label = {
                             Text(
-                                text = "Scale From 1.0 - to 10.0",
+                                text = "Scale From 1.0 - to 10",
                                 style = MaterialTheme.typography.bodyMedium.copy(
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 14.sp

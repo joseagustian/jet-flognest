@@ -563,7 +563,7 @@ fun AddContentDialog(
                                 },
                                 label = {
                                     Text(
-                                        text = if (isWatched) "1.0 - 10.0" else "",
+                                        text = if (isWatched) "1.0 - 10" else "",
                                         style = MaterialTheme.typography.bodyMedium.copy(
                                             fontWeight = FontWeight.Bold,
                                             fontSize = 14.sp
